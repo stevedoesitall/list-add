@@ -21,6 +21,8 @@ document.addEventListener("click", function clean_email() {
             get_id("email").value = email.substring(0,at_pos);
             email = email.substring(0,at_pos);
         }
+        get_id("email").value = email.toLowerCase();
+        email = email.toLowerCase();
     }
 });
 
@@ -32,7 +34,7 @@ submit_button.addEventListener("click", function submit_email() {
 
     total_submissions = total_submissions + 1;
     cl(email);
-    submit_button.innerHTML = "Add Another";
+    submit_button.innerHTML = "Another";
 
     fetch("/server", {
         method: "post",
