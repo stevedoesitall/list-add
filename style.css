@@ -48,3 +48,7 @@ ul {
     border-color: #FFFFFF;
     color: #FFFFFF;
 }
+
+.bold {
+    font-weight: bold;
+}

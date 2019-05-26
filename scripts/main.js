@@ -64,7 +64,7 @@ submit_button.addEventListener("click", function submit_email() {
                 const div = create_el("div");
 
                 const user_lists = Object.keys(user.lists);
-                p.innerHTML = `${i}. ${user.id}'s source is ${user.vars.source} has been added to:`
+                p.innerHTML = `${i}. <span class="bold">${user.id}</span>'s source is <span class="bold">${user.vars.source}</span> has been added to:`
                 user_lists.forEach(list => {
                     const li = create_el("li");
                     li.innerHTML = list;
