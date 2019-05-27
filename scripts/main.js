@@ -21,8 +21,8 @@ document.addEventListener("click", function clean_email() {
             get_id("email").value = email.substring(0,at_pos);
             email = email.substring(0,at_pos);
         }
-        get_id("email").value = email.toLowerCase();
-        email = email.toLowerCase();
+        get_id("email").value = email.toLowerCase().replace(/\s/g, "");
+        email = email.toLowerCase().replace(/\s/g, "");
     }
 });
 
