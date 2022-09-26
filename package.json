@@ -19,6 +19,6 @@
   "homepage": "https://github.com/stevedoesitall/list-add#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "sailthru-client": "^3.0.5"
+    "sailthru-client": "^3.0.6"
   }
 }
